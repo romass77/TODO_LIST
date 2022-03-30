@@ -1,7 +1,7 @@
 
 
 
-
+const myContainer = document.querySelector('.container');
 
 const removeChekedBtn = document.querySelector('#deleteChekedRowsBtn');
 const result = document.querySelector('.result');
@@ -12,11 +12,11 @@ const myProgressBar = document.querySelector('progress');
 
 
 const myToDoUl = document.createElement('ul');
-
+myContainer.appendChild(myToDoUl);
 
 let totalNumberOfTodos = 0;
 let completedTodos = 0;
-//let completedTodosPercent = 0;
+
 let percentOfCompetedTasks = 0;
 // add event
 inputBtn.addEventListener('click', inputRow);
